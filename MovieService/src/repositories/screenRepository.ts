@@ -3,7 +3,6 @@ import prisma from "../config/prismaClient";
 import { prismaOperation } from "../utils/PrismaOperationWrapper";
 import { ScreenType } from "../types/types";
 
-
 export class ScreenRepository {
   // Create a new screen in the database
   async create(data: ScreenType): Promise<Screen> {
@@ -19,7 +18,16 @@ export class ScreenRepository {
   // Fetch all screens
   async findAll(): Promise<Screen[]> {
     return prismaOperation(
-      () => prisma.screen.findMany(),
+      () =>
+        prisma.screen.findMany({
+          include: {
+            theater: {
+              select: {
+                name: true,
+              },
+            },
+          },
+        }),
       "Failed to fetch screens"
     );
   }
@@ -33,7 +41,7 @@ export class ScreenRepository {
   }
 
   // Find a screen by theater ID and number
-  async findByTheaterIdAndNumber(
+  async findScreenByTheaterId(
     theaterId: string,
     number: number
   ): Promise<Screen | null> {
@@ -46,14 +54,6 @@ export class ScreenRepository {
           },
         }),
       "Failed to check if screen exists"
-    );
-  }
-
-  // Fetch the theater associated with the screen
-  async findTheaterById(theaterId: string): Promise<Theater | null> {
-    return prismaOperation(
-      () => prisma.theater.findUnique({ where: { id: theaterId } }),
-      "Failed to fetch theater by ID"
     );
   }
 
@@ -70,6 +70,29 @@ export class ScreenRepository {
     return prismaOperation(
       () => prisma.screen.delete({ where: { id } }),
       "Failed to delete screen"
+    );
+  }
+
+  async findScreenByNumberInTheater(theaterId: string, number: number) {
+    return prismaOperation(
+      () =>
+        prisma.screen.findFirst({
+          where: {
+            theaterId,
+            number,
+          },
+        }),
+      "Failed to find Screen By Number In Theater"
+    );
+  }
+
+  async getAllScreensInTheater(theaterId: string) {
+    return prismaOperation(
+      () =>
+        prisma.screen.findMany({
+          where: { theaterId },
+        }),
+      "Failed to Fetch all The Screen of A theater"
     );
   }
 }

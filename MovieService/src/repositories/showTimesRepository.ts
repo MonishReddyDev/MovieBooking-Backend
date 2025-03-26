@@ -55,29 +55,6 @@ export class ShowTimesRepository {
     );
   }
 
-  async findByMovieAndTheater(
-    movieId: string,
-    theaterId: string,
-    startTime: Date,
-    screenId: string
-  ): Promise<Showtime | null> {
-    return prismaOperation(
-      () =>
-        prisma.showtime.findUnique({
-          where: {
-            movieId_theaterId_startTime_screenId: {
-              movieId,
-              theaterId,
-              startTime,
-              screenId,
-            },
-          },
-        }),
-      "Failed to fetch the Movie and Theater"
-    );
-  }
-  
-
   async findAll(): Promise<Showtime[]> {
     return prismaOperation(
       () => prisma.showtime.findMany(),
@@ -112,4 +89,6 @@ export class ShowTimesRepository {
       "Failed to fetch Showtime by ID"
     );
   }
+
+  // Get All Showtimes Purpose: Retrieve all showtimes for a specific theater, movie, or a given date range.
 }
