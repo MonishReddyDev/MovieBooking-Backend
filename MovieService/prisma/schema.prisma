@@ -1,0 +1,88 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum ShowType {
+  MORNING_SHOW
+  MATINEE_SHOW
+  FIRST_SHOW
+  SECOND_SHOW
+  BENEFIT_SHOW
+}
+
+model Theater {
+  id         String   @id @default(uuid())
+  name       String
+  location   String
+  totalSeats Int
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+
+  screens   Screen[]
+  showtimes Showtime[]
+
+  
+}
+
+model Screen {
+  id         String     @id @default(uuid())
+  number     Int        // Screen number (e.g., Screen 1, Screen 2, etc.)
+  capacity   Int        // Number of seats in the screen
+  createdAt  DateTime   @default(now())
+  updatedAt  DateTime   @updatedAt
+
+  theaterId  String     // Foreign key to Theater
+  theater    Theater    @relation(fields: [theaterId], references: [id])
+  
+  showtimes  Showtime[] // One screen can have multiple showtimes
+  @@unique([number, theaterId]) 
+}
+
+
+model Movie {
+  id          String     @id @default(uuid())
+  title       String
+  description String?
+  releaseDate DateTime
+  duration    Int
+  genres      String[]
+  language    String
+  ratings     Float      @default(0.0)
+  posterUrl   String?
+  createdAt   DateTime   @default(now())
+  updatedAt   DateTime   @updatedAt
+  showtimes   Showtime[]
+}
+
+model Showtime {
+  id             String   @id @default(uuid())
+  startTime      DateTime
+  endTime        DateTime
+  availableSeats Int  
+  showType       ShowType
+
+  movieId String
+  movie   Movie  @relation(fields: [movieId], references: [id])
+
+  theaterId String
+  theater   Theater @relation(fields: [theaterId], references: [id], onDelete: Cascade)
+
+  screenId String
+  screen   Screen @relation(fields: [screenId], references: [id], onDelete: Cascade)
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@unique([movieId, theaterId, startTime, screenId])
+}
