@@ -8,6 +8,9 @@
     "strict": true,
     "skipLibCheck": true
   },
+  "execMap": {
+    "ts": "ts-node --transpileOnly"
+  },
   "include": [
     "src/**/*"
   ],

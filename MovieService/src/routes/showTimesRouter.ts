@@ -1,6 +1,6 @@
 // routes/showtimeRoutes.ts
 import { Router } from "express";
-import { ShowtimeController } from "../controllers/ShowtimesController";
+import { ShowtimeController } from "../controllers/showtimesController";
 import {
   validateShowTime,
   validateshowtimeUpdateSchema,

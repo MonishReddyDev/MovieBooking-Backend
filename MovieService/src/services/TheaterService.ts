@@ -1,5 +1,5 @@
 import { Theater } from "@prisma/client";
-import { TheaterRepository } from "../repositories/TheaterRepository";
+import { TheaterRepository } from "../repositories/theaterRepository";
 import { NotFoundError } from "../utils/customError";
 import { TheaterType } from "../types/types";
 

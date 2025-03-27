@@ -1,4 +1,4 @@
-import { ShowtimeService } from "../services/ShowTimesService";
+import { ShowtimeService } from "../services/showTimesService";
 import { controllerWrapper } from "../utils/controllerWrapper";
 import { Request, Response } from "express";
 

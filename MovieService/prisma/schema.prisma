@@ -1,8 +1,3 @@
-// This is your Prisma schema file,
-// learn more about it in the docs: https://pris.ly/d/prisma-schema
-
-// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
-// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
 
 generator client {
   provider = "prisma-client-js"
@@ -32,23 +27,25 @@ model Theater {
   screens   Screen[]
   showtimes Showtime[]
 
-  
+  @@index([location, name])
 }
 
 model Screen {
-  id         String     @id @default(uuid())
-  number     Int        // Screen number (e.g., Screen 1, Screen 2, etc.)
-  capacity   Int        // Number of seats in the screen
-  createdAt  DateTime   @default(now())
-  updatedAt  DateTime   @updatedAt
+  id        String   @id @default(uuid())
+  number    Int // Screen number (e.g., Screen 1, Screen 2, etc.)
+  capacity  Int // Number of seats in the screen
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
 
-  theaterId  String     // Foreign key to Theater
-  theater    Theater    @relation(fields: [theaterId], references: [id])
+  theaterId String // Foreign key to Theater
+  theater   Theater @relation(fields: [theaterId], references: [id])
+
+  showtimes Showtime[] // One screen can have multiple showtimes
+
+  @@unique([number, theaterId])
+  @@index([theaterId])
   
-  showtimes  Showtime[] // One screen can have multiple showtimes
-  @@unique([number, theaterId]) 
 }
-
 
 model Movie {
   id          String     @id @default(uuid())
@@ -63,13 +60,15 @@ model Movie {
   createdAt   DateTime   @default(now())
   updatedAt   DateTime   @updatedAt
   showtimes   Showtime[]
+
+  @@index([releaseDate, title, genres,ratings])
 }
 
 model Showtime {
   id             String   @id @default(uuid())
   startTime      DateTime
   endTime        DateTime
-  availableSeats Int  
+  availableSeats Int
   showType       ShowType
 
   movieId String
@@ -85,4 +84,8 @@ model Showtime {
   updatedAt DateTime @updatedAt
 
   @@unique([movieId, theaterId, startTime, screenId])
+  @@index([startTime]) // Optimize filtering by show start time
+  @@index([movieId]) // Optimize searching by movie
+  @@index([theaterId]) // Optimize searching by theater
+  @@index([screenId])
 }

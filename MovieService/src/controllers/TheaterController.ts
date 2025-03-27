@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import { TheaterService } from "../services/TheaterService";
+import { TheaterService } from "../services/theaterService";
 import { controllerWrapper } from "../utils/controllerWrapper";
 import logger from "../utils/logger";
 

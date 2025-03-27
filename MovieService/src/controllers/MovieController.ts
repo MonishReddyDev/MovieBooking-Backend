@@ -1,4 +1,4 @@
-import { MovieService } from "../services/MovieService";
+import { MovieService } from "../services/movieService";
 import { Request } from "express";
 import { controllerWrapper } from "../utils/controllerWrapper";
 import logger from "../utils/logger";

@@ -2,7 +2,7 @@ import { Screen } from "@prisma/client";
 import { NotFoundError, ValidationError } from "../utils/customError";
 import { ScreenType } from "../types/types";
 import { ScreenRepository } from "../repositories/screenRepository";
-import { TheaterService } from "./TheaterService";
+import { TheaterService } from "./theaterService";
 import logger from "../utils/logger";
 
 export class ScreenService {

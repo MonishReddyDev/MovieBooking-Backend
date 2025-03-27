@@ -1,9 +1,11 @@
 import { Showtime } from "@prisma/client";
 import { ShowTimesRepository } from "../repositories/showTimesRepository";
-import { MovieService } from "./MovieService";
+import { MovieService } from "./movieService";
 import { NotFoundError, ValidationError } from "../utils/customError";
-import { TheaterService } from "./TheaterService";
-import { ScreenService } from "./ScreenService";
+
+import { ShowtimeWithDetails } from "../types/types";
+import { TheaterService } from "./theaterService";
+import { ScreenService } from "./screenService";
 
 export class ShowtimeService {
   private showTimeRepo = new ShowTimesRepository();
@@ -54,7 +56,7 @@ export class ShowtimeService {
     return addedShowtime;
   }
 
-  async getAllShowtimes(): Promise<Showtime[]> {
+  async getAllShowtimes(): Promise<ShowtimeWithDetails[]> {
     return this.showTimeRepo.findAll();
   }
 

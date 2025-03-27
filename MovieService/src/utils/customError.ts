@@ -1,3 +1,5 @@
+import logger from "./logger";
+
 export class CustomError extends Error {
   status: number;
   constructor(message: string, status: number) {
@@ -5,6 +7,13 @@ export class CustomError extends Error {
     this.status = status;
     this.name = "CustomError";
     Error.captureStackTrace(this, CustomError);
+    // Log the error using Winston logger
+    logger.error(
+      `Error [${this.name}] with status ${this.status}: ${message}`
+      // {
+      //   stack: this.stack,
+      // }
+    );
   }
 }
 

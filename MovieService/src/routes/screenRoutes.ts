@@ -1,5 +1,5 @@
 import { Router } from "express";
-import { ScreenController } from "../controllers/ScreenController";
+import { ScreenController } from "../controllers/screenController";
 import { validateScreen } from "../middlewares/validationMiddleware";
 
 const router = Router();

@@ -1,5 +1,6 @@
 import { Prisma } from "@prisma/client";
 import { DatabaseError, NotFoundError } from "./customError";
+import logger from "./logger";
 
 // Prisma operation wrapper
 export async function prismaOperation<T>(
@@ -9,7 +10,6 @@ export async function prismaOperation<T>(
   try {
     return await operation();
   } catch (error: unknown) {
-    console.log("Error->PrismaOperation");
     if (error instanceof Prisma.PrismaClientKnownRequestError) {
       if (error.code === "P2025") {
         throw new NotFoundError(`${operationName}: Record not found`);

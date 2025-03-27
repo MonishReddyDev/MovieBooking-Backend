@@ -1,5 +1,5 @@
 import { Router } from "express";
-import { MovieController } from "../controllers/MovieController";
+import { MovieController } from "../controllers/movieController";
 import { validateMovie } from "../middlewares/validationMiddleware";
 
 const router = Router();

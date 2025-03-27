@@ -1,7 +1,7 @@
 import { Request, Response } from "express";
 import { controllerWrapper } from "../utils/controllerWrapper";
 import logger from "../utils/logger";
-import { ScreenService } from "../services/ScreenService";
+import { ScreenService } from "../services/screenService";
 
 export class ScreenController {
   private static screenService = new ScreenService();

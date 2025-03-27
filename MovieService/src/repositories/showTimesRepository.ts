@@ -1,6 +1,7 @@
 import { Showtime } from "@prisma/client";
 import prisma from "../config/prismaClient";
 import { prismaOperation } from "../utils/PrismaOperationWrapper";
+import { ShowtimeWithDetails } from "../types/types";
 
 export class ShowTimesRepository {
   async create(
@@ -55,9 +56,29 @@ export class ShowTimesRepository {
     );
   }
 
-  async findAll(): Promise<Showtime[]> {
+  async findAll(): Promise<ShowtimeWithDetails[]> {
     return prismaOperation(
-      () => prisma.showtime.findMany(),
+      () =>
+        prisma.showtime.findMany({
+          select: {
+            id: true,
+            startTime: true,
+            endTime: true,
+            availableSeats: true,
+            showType: true,
+            createdAt: true,
+            updatedAt: true,
+            movie: {
+              select: { id: true, title: true },
+            },
+            theater: {
+              select: { id: true, name: true },
+            },
+            screen: {
+              select: { id: true, number: true },
+            },
+          },
+        }),
       "Failed to fetch Showtimes"
     );
   }

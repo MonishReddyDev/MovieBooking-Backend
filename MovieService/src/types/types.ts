@@ -1,3 +1,5 @@
+import { ShowType } from "@prisma/client";
+
 export interface TheaterType {
   name: string;
   location: string;
@@ -16,4 +18,17 @@ export type ScreenType = {
   number: number;
   capacity: number;
   theaterId: string;
+};
+
+export type ShowtimeWithDetails = {
+  id: string;
+  startTime: Date;
+  endTime: Date;
+  availableSeats: number;
+  showType: ShowType;
+  createdAt: Date;
+  updatedAt: Date;
+  movie: { id: string; title: string };
+  theater: { id: string; name: string };
+  screen: { id: string; number: number };
 };

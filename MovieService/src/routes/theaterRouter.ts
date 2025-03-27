@@ -1,5 +1,5 @@
 import { Router } from "express";
-import { TheaterController } from "../controllers/TheaterController";
+import { TheaterController } from "../controllers/theaterController";
 import { validateTheater } from "../middlewares/validationMiddleware";
 
 const router = Router();
