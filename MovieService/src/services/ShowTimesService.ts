@@ -137,4 +137,13 @@ export class ShowtimeService {
     const movie = await this.movieService.getMovieById(movieId);
     return this.showTimeRepo.getShowtimesByMovieId(movieId);
   }
+
+  async getAvailableSeatsForShowtime(showtimeId: string) {
+    const showtime = await this.showTimeRepo.findById(showtimeId);
+    if (!showtime) {
+      throw new NotFoundError("Showtime not found");
+    }
+    const availableSeats = showtime.availableSeats;
+    return availableSeats;
+  }
 }

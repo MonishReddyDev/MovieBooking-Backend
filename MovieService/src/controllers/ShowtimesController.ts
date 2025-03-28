@@ -51,4 +51,15 @@ export class ShowtimeController {
       message: "Movie Showtimings  Fetched successfully",
     };
   });
+
+  static getAvailableSeats = controllerWrapper(async (req: Request) => {
+    const { showtimeId } = req.params;
+    const availableSeats =
+      await this.showtimeService.getAvailableSeatsForShowtime(showtimeId);
+    const result = { availableSeats: availableSeats };
+    return {
+      data: result,
+      message: "Successfully fetched availableSeats",
+    };
+  });
 }

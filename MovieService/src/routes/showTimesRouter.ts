@@ -28,4 +28,9 @@ router.get(
   ShowtimeController.getShowtimesForMovie
 );
 
+router.get(
+  "/showtimes/:showtimeId/seats",
+  ShowtimeController.getAvailableSeats
+);
+
 export default router;

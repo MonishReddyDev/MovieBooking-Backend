@@ -136,4 +136,17 @@ export class ShowTimesRepository {
       "Failed to fetch the Showtimes of a Movie"
     );
   }
+
+  async getAvailableSeatsByShowtimeId(showtimeId: string): Promise<any> {
+    return prismaOperation(
+      () =>
+        prisma.showtime.findUnique({
+          where: {
+            id: showtimeId,
+          },
+          select: { availableSeats: true },
+        }),
+      "Failed to Fetch the availableSeats of a Movie"
+    );
+  }
 }

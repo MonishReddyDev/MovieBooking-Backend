@@ -128,3 +128,53 @@
 {"level":"info","message":"Redis Database is connected","service":"Movie-service","timestamp":"2025-03-28T00:26:29.690Z"}
 {"level":"info","message":"Movie service running on port 3000","service":"Movie-service","timestamp":"2025-03-28T00:27:36.934Z"}
 {"level":"info","message":"Redis Database is connected","service":"Movie-service","timestamp":"2025-03-28T00:27:36.987Z"}
+{"level":"info","message":"Movie service running on port 3000","service":"Movie-service","timestamp":"2025-03-28T00:29:52.240Z"}
+{"level":"info","message":"Redis Database is connected","service":"Movie-service","timestamp":"2025-03-28T00:29:52.267Z"}
+{"level":"info","message":"Movie service running on port 3000","service":"Movie-service","timestamp":"2025-03-28T00:32:30.486Z"}
+{"level":"info","message":"Redis Database is connected","service":"Movie-service","timestamp":"2025-03-28T00:32:30.520Z"}
+{"level":"info","message":"Movie service running on port 3000","service":"Movie-service","timestamp":"2025-03-28T00:32:41.961Z"}
+{"level":"info","message":"Redis Database is connected","service":"Movie-service","timestamp":"2025-03-28T00:32:41.987Z"}
+{"level":"info","message":"Movie service running on port 3000","service":"Movie-service","timestamp":"2025-03-28T00:32:45.154Z"}
+{"level":"info","message":"Redis Database is connected","service":"Movie-service","timestamp":"2025-03-28T00:32:45.179Z"}
+{"level":"info","message":"Movie service running on port 3000","service":"Movie-service","timestamp":"2025-03-28T00:33:05.515Z"}
+{"level":"info","message":"Redis Database is connected","service":"Movie-service","timestamp":"2025-03-28T00:33:05.538Z"}
+{"level":"info","message":"Movie service running on port 3000","service":"Movie-service","timestamp":"2025-03-28T00:34:55.451Z"}
+{"level":"info","message":"Redis Database is connected","service":"Movie-service","timestamp":"2025-03-28T00:34:55.480Z"}
+{"level":"info","message":"Movie service running on port 3000","service":"Movie-service","timestamp":"2025-03-28T00:35:14.958Z"}
+{"level":"info","message":"Redis Database is connected","service":"Movie-service","timestamp":"2025-03-28T00:35:14.982Z"}
+{"level":"info","message":"Movie service running on port 3000","service":"Movie-service","timestamp":"2025-03-28T00:35:18.362Z"}
+{"level":"info","message":"Redis Database is connected","service":"Movie-service","timestamp":"2025-03-28T00:35:18.390Z"}
+{"level":"info","message":"Movie service running on port 3000","service":"Movie-service","timestamp":"2025-03-28T00:35:42.799Z"}
+{"level":"info","message":"Redis Database is connected","service":"Movie-service","timestamp":"2025-03-28T00:35:42.828Z"}
+{"level":"info","message":"Movie service running on port 3000","service":"Movie-service","timestamp":"2025-03-28T00:35:47.333Z"}
+{"level":"info","message":"Redis Database is connected","service":"Movie-service","timestamp":"2025-03-28T00:35:47.358Z"}
+{"level":"info","message":"Movie service running on port 3000","service":"Movie-service","timestamp":"2025-03-28T00:35:54.024Z"}
+{"level":"info","message":"Redis Database is connected","service":"Movie-service","timestamp":"2025-03-28T00:35:54.052Z"}
+{"level":"info","message":"Movie service running on port 3000","service":"Movie-service","timestamp":"2025-03-28T00:36:00.087Z"}
+{"level":"info","message":"Redis Database is connected","service":"Movie-service","timestamp":"2025-03-28T00:36:00.112Z"}
+{"level":"info","message":"Movie service running on port 3000","service":"Movie-service","timestamp":"2025-03-28T00:36:07.260Z"}
+{"level":"info","message":"Redis Database is connected","service":"Movie-service","timestamp":"2025-03-28T00:36:07.290Z"}
+{"level":"info","message":"Movie service running on port 3000","service":"Movie-service","timestamp":"2025-03-28T00:36:20.802Z"}
+{"level":"info","message":"Redis Database is connected","service":"Movie-service","timestamp":"2025-03-28T00:36:20.827Z"}
+{"level":"info","message":"Movie service running on port 3000","service":"Movie-service","timestamp":"2025-03-28T00:36:25.909Z"}
+{"level":"info","message":"Redis Database is connected","service":"Movie-service","timestamp":"2025-03-28T00:36:25.935Z"}
+{"level":"info","message":"Movie service running on port 3000","service":"Movie-service","timestamp":"2025-03-28T00:36:37.137Z"}
+{"level":"info","message":"Redis Database is connected","service":"Movie-service","timestamp":"2025-03-28T00:36:37.165Z"}
+{"level":"info","message":"Movie service running on port 3000","service":"Movie-service","timestamp":"2025-03-28T00:38:19.676Z"}
+{"level":"info","message":"Redis Database is connected","service":"Movie-service","timestamp":"2025-03-28T00:38:19.700Z"}
+{"level":"info","message":"Movie service running on port 3000","service":"Movie-service","timestamp":"2025-03-28T00:38:28.347Z"}
+{"level":"info","message":"Redis Database is connected","service":"Movie-service","timestamp":"2025-03-28T00:38:28.371Z"}
+{"level":"info","message":"Movie service running on port 3000","service":"Movie-service","timestamp":"2025-03-28T00:38:34.506Z"}
+{"level":"info","message":"Redis Database is connected","service":"Movie-service","timestamp":"2025-03-28T00:38:34.529Z"}
+{"level":"info","message":"Movie service running on port 3000","service":"Movie-service","timestamp":"2025-03-28T00:38:41.588Z"}
+{"level":"info","message":"Redis Database is connected","service":"Movie-service","timestamp":"2025-03-28T00:38:41.612Z"}
+{"level":"info","message":"Movie service running on port 3000","service":"Movie-service","timestamp":"2025-03-28T00:38:45.795Z"}
+{"level":"info","message":"Redis Database is connected","service":"Movie-service","timestamp":"2025-03-28T00:38:45.818Z"}
+{"level":"info","message":"Movie service running on port 3000","service":"Movie-service","timestamp":"2025-03-28T00:39:25.380Z"}
+{"level":"info","message":"Redis Database is connected","service":"Movie-service","timestamp":"2025-03-28T00:39:25.405Z"}
+{"level":"info","message":"Movie service running on port 3000","service":"Movie-service","timestamp":"2025-03-28T00:39:42.920Z"}
+{"level":"info","message":"Redis Database is connected","service":"Movie-service","timestamp":"2025-03-28T00:39:42.945Z"}
+{"level":"info","message":"Movie service running on port 3000","service":"Movie-service","timestamp":"2025-03-28T00:40:44.329Z"}
+{"level":"info","message":"Redis Database is connected","service":"Movie-service","timestamp":"2025-03-28T00:40:44.356Z"}
+{"level":"info","message":"Movie service running on port 3000","service":"Movie-service","timestamp":"2025-03-28T00:41:02.791Z"}
+{"level":"info","message":"Redis Database is connected","service":"Movie-service","timestamp":"2025-03-28T00:41:02.816Z"}
