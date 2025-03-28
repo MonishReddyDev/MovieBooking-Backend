@@ -60,7 +60,7 @@ export class ShowtimeService {
     return this.showTimeRepo.findAll();
   }
 
-  async getShowtimesById(id: string) {
+  async getShowtimesById(id: string): Promise<Showtime | null> {
     return this.showTimeRepo.findById(id);
   }
 
@@ -131,5 +131,10 @@ export class ShowtimeService {
     // 5. Update the showtime
     const updatedShowtime = await this.showTimeRepo.update(id, updateData);
     return updatedShowtime;
+  }
+
+  async getShowtimesForMovie(movieId: string): Promise<Showtime[]> {
+    const movie = await this.movieService.getMovieById(movieId);
+    return this.showTimeRepo.getShowtimesByMovieId(movieId);
   }
 }

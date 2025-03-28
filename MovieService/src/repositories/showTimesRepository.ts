@@ -111,5 +111,29 @@ export class ShowTimesRepository {
     );
   }
 
-  // Get All Showtimes Purpose: Retrieve all showtimes for a specific theater, movie, or a given date range.
+  async getShowtimesByMovieId(movieId: string): Promise<Showtime[]> {
+    return prismaOperation(
+      () =>
+        prisma.showtime.findMany({
+          where: {
+            movieId: movieId,
+          },
+          include: {
+            theater: {
+              select: {
+                name: true,
+                location: true,
+              },
+            },
+            screen: {
+              select: {
+                number: true,
+                capacity: true,
+              },
+            },
+          },
+        }),
+      "Failed to fetch the Showtimes of a Movie"
+    );
+  }
 }

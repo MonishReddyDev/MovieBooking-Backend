@@ -15,11 +15,17 @@ router.post(
 );
 router.get("/showtimes", ShowtimeController.getAllShowtimes);
 router.get("/showtimes/:id", ShowtimeController.getShowtimeById);
+
 router.put(
   "/showtimes/:id",
   validateshowtimeUpdateSchema,
   ShowtimeController.updateShowtime
 );
 router.delete("/showtimes/:id", ShowtimeController.deleteShowtime);
+
+router.get(
+  "/movies/:movieId/showtimes",
+  ShowtimeController.getShowtimesForMovie
+);
 
 export default router;

@@ -1,6 +1,7 @@
+import prisma from "../config/prismaClient";
 import { ShowtimeService } from "../services/showTimesService";
 import { controllerWrapper } from "../utils/controllerWrapper";
-import { Request, Response } from "express";
+import { NextFunction, Request, Response } from "express";
 
 export class ShowtimeController {
   private static showtimeService = new ShowtimeService();
@@ -24,9 +25,8 @@ export class ShowtimeController {
   });
 
   static getShowtimeById = controllerWrapper(async (req: Request) => {
-    const showtimes = await this.showtimeService.getShowtimesById(
-      req.params.id
-    );
+    const showTimeId = req.params.id;
+    const showtimes = await this.showtimeService.getShowtimesById(showTimeId);
     return { data: showtimes, message: "Showtimes retrieved successfully" };
   });
 
@@ -41,5 +41,14 @@ export class ShowtimeController {
   static deleteShowtime = controllerWrapper(async (req: Request) => {
     await this.showtimeService.deleteShowTime(req.params.id);
     return { data: null, message: "Showtimes deleted successfully" };
+  });
+
+  static getShowtimesForMovie = controllerWrapper(async (req: Request) => {
+    const movieId = req.params.movieId;
+    const showtimes = await this.showtimeService.getShowtimesForMovie(movieId);
+    return {
+      data: showtimes,
+      message: "Movie Showtimings  Fetched successfully",
+    };
   });
 }
