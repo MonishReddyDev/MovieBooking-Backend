@@ -1,0 +1,62 @@
+{"level":"info","message":"Identity service running on port 3001","service":"identity-service","timestamp":"2025-03-30T23:17:21.452Z"}
+{"level":"info","message":"Redis Database is connected","service":"identity-service","timestamp":"2025-03-30T23:17:21.460Z"}
+{"level":"info","message":"Connected to mongodb","service":"identity-service","timestamp":"2025-03-30T23:17:22.005Z"}
+{"level":"info","message":"Received POST request to /v1/auth/register","service":"identity-service","timestamp":"2025-03-30T23:20:51.082Z"}
+{"level":"info","message":"Request body: {\"username\":\"Monish\",\"email\":\"Monish@gmail.com\",\"password\":\"15124Ec023@\"}","service":"identity-service","timestamp":"2025-03-30T23:20:51.087Z"}
+{"level":"info","message":"Received POST request to /v1/auth/register","service":"identity-service","timestamp":"2025-03-30T23:21:44.080Z"}
+{"level":"info","message":"Request body: {\"username\":\"Monish\",\"email\":\"Monish@gmail.com\",\"password\":\"15124Ec023@\"}","service":"identity-service","timestamp":"2025-03-30T23:21:44.083Z"}
+{"level":"info","message":"Received POST request to /v1/auth/register","service":"identity-service","timestamp":"2025-03-30T23:22:37.888Z"}
+{"level":"info","message":"Request body: {\"username\":\"Monish\",\"email\":\"Monish@gmail.com\",\"password\":\"15124Ec023@\"}","service":"identity-service","timestamp":"2025-03-30T23:22:37.890Z"}
+{"level":"info","message":"Identity service running on port 3001","service":"identity-service","timestamp":"2025-03-30T23:23:06.685Z"}
+{"level":"info","message":"Redis Database is connected","service":"identity-service","timestamp":"2025-03-30T23:23:06.692Z"}
+{"level":"info","message":"Connected to mongodb","service":"identity-service","timestamp":"2025-03-30T23:23:07.227Z"}
+{"level":"info","message":"Received POST request to /v1/auth/register","service":"identity-service","timestamp":"2025-03-30T23:23:15.004Z"}
+{"level":"info","message":"Request body: {\"username\":\"Monish\",\"email\":\"Monish@gmail.com\",\"password\":\"15124Ec023@\"}","service":"identity-service","timestamp":"2025-03-30T23:23:15.005Z"}
+{"level":"info","message":"Received POST request to /v1/auth/register","service":"identity-service","timestamp":"2025-03-30T23:23:36.438Z"}
+{"level":"info","message":"Request body: {\"username\":\"lokesh2\",\"email\":\"lokesh2@gmail.com\",\"password\":\"15124Ec023@\"}","service":"identity-service","timestamp":"2025-03-30T23:23:36.444Z"}
+{"level":"info","message":"Identity service running on port 3001","service":"identity-service","timestamp":"2025-03-30T23:23:53.548Z"}
+{"level":"info","message":"Redis Database is connected","service":"identity-service","timestamp":"2025-03-30T23:23:53.556Z"}
+{"level":"info","message":"Connected to mongodb","service":"identity-service","timestamp":"2025-03-30T23:23:53.987Z"}
+{"level":"info","message":"Received POST request to /v1/auth/register","service":"identity-service","timestamp":"2025-03-30T23:23:56.517Z"}
+{"level":"info","message":"Request body: {\"username\":\"lokesh2\",\"email\":\"lokesh2@gmail.com\",\"password\":\"15124Ec023@\"}","service":"identity-service","timestamp":"2025-03-30T23:23:56.517Z"}
+{"level":"info","message":"Received POST request to /v1/auth/register","service":"identity-service","timestamp":"2025-03-30T23:23:56.951Z"}
+{"level":"info","message":"Request body: {\"username\":\"lokesh2\",\"email\":\"lokesh2@gmail.com\",\"password\":\"15124Ec023@\"}","service":"identity-service","timestamp":"2025-03-30T23:23:56.953Z"}
+{"level":"info","message":"Identity service running on port 3001","service":"identity-service","timestamp":"2025-03-30T23:25:54.845Z"}
+{"level":"info","message":"Redis Database is connected","service":"identity-service","timestamp":"2025-03-30T23:25:54.853Z"}
+{"level":"info","message":"Connected to mongodb","service":"identity-service","timestamp":"2025-03-30T23:25:55.400Z"}
+{"level":"info","message":"Received POST request to /v1/auth/register","service":"identity-service","timestamp":"2025-03-30T23:26:01.652Z"}
+{"level":"info","message":"Request body: {\"username\":\"lokesh2\",\"email\":\"lokesh2@gmail.com\",\"password\":\"15124Ec023@\"}","service":"identity-service","timestamp":"2025-03-30T23:26:01.653Z"}
+{"level":"info","message":"Identity service running on port 3001","service":"identity-service","timestamp":"2025-03-30T23:28:27.142Z"}
+{"level":"info","message":"Redis Database is connected","service":"identity-service","timestamp":"2025-03-30T23:28:27.176Z"}
+{"level":"info","message":"Connected to mongodb","service":"identity-service","timestamp":"2025-03-30T23:28:27.701Z"}
+{"level":"info","message":"Received POST request to /api/auth/register","service":"identity-service","timestamp":"2025-03-30T23:28:37.453Z"}
+{"level":"info","message":"Request body: {\"username\":\"lokesh2\",\"email\":\"lokesh2@gmail.com\",\"password\":\"15124Ec023@\"}","service":"identity-service","timestamp":"2025-03-30T23:28:37.456Z"}
+{"level":"info","message":"Registration endpoint hit...","service":"identity-service","timestamp":"2025-03-30T23:28:37.464Z"}
+{"level":"info","message":"User saved successfully","service":"identity-service","timestamp":"2025-03-30T23:28:37.644Z","userId":"67e9d3a5a6c06e0f506f89d1"}
+{"level":"info","message":"Received POST request to /api/auth/login","service":"identity-service","timestamp":"2025-03-30T23:29:04.170Z"}
+{"level":"info","message":"Request body: {\"username\":\"lokesh2\",\"email\":\"lokesh2@gmail.com\"}","service":"identity-service","timestamp":"2025-03-30T23:29:04.172Z"}
+{"0":"P","1":"a","10":"s","11":" ","12":"r","13":"e","14":"q","15":"u","16":"i","17":"r","18":"e","19":"d","2":"s","3":"s","4":"w","5":"o","6":"r","7":"d","8":" ","9":"i","level":"warn","message":"Validation error","service":"identity-service","timestamp":"2025-03-30T23:29:04.187Z"}
+{"level":"info","message":"Received POST request to /api/auth/login","service":"identity-service","timestamp":"2025-03-30T23:29:16.286Z"}
+{"level":"info","message":"Request body: {\"email\":\"lokesh2@gmail.com\",\"password\":\"15124Ec023@\"}","service":"identity-service","timestamp":"2025-03-30T23:29:16.287Z"}
+{"level":"info","message":"Received POST request to /api/auth/logout","service":"identity-service","timestamp":"2025-03-30T23:29:35.513Z"}
+{"level":"info","message":"Request body: {\"refreshToken\":\"f6b2c6c088a10cff0dc910c9ab64893d90992162b4137b3e267a13be351abc8f9674919683f84635\"}","service":"identity-service","timestamp":"2025-03-30T23:29:35.514Z"}
+{"level":"info","message":"Logout endpoint hit...","service":"identity-service","timestamp":"2025-03-30T23:29:35.519Z"}
+{"level":"info","message":"Refresh token deleted for logout","service":"identity-service","timestamp":"2025-03-30T23:29:35.569Z"}
+{"level":"info","message":"Received POST request to /api/auth/refreshToken","service":"identity-service","timestamp":"2025-03-30T23:30:46.911Z"}
+{"level":"info","message":"Request body: {\"refreshToken\":\"f6b2c6c088a10cff0dc910c9ab64893d90992162b4137b3e267a13be351abc8f9674919683f84635\"}","service":"identity-service","timestamp":"2025-03-30T23:30:46.912Z"}
+{"level":"warn","message":"Invalid or expired refresh token","service":"identity-service","timestamp":"2025-03-30T23:30:46.965Z"}
+{"level":"info","message":"Received POST request to /api/auth/login","service":"identity-service","timestamp":"2025-03-30T23:30:55.530Z"}
+{"level":"info","message":"Request body: {\"email\":\"lokesh2@gmail.com\",\"password\":\"15124Ec023@\"}","service":"identity-service","timestamp":"2025-03-30T23:30:55.530Z"}
+{"level":"info","message":"Received POST request to /api/auth/refreshToken","service":"identity-service","timestamp":"2025-03-30T23:31:01.234Z"}
+{"level":"info","message":"Request body: {\"refreshToken\":\"9ddb952080a061546ddb2985217ac7179fb9007ef1e71a468989c30dc26962bc83a5fd9659027a9e\"}","service":"identity-service","timestamp":"2025-03-30T23:31:01.235Z"}
+{"level":"info","message":"Received POST request to /api/auth/logout","service":"identity-service","timestamp":"2025-03-30T23:31:07.107Z"}
+{"level":"info","message":"Request body: {\"refreshToken\":\"02f7c06696e5f03801f237f05759a478d405fa598c7dba74db57bc89a2ce6bea2f460796d1c41cb7\"}","service":"identity-service","timestamp":"2025-03-30T23:31:07.108Z"}
+{"level":"info","message":"Logout endpoint hit...","service":"identity-service","timestamp":"2025-03-30T23:31:07.114Z"}
+{"level":"info","message":"Refresh token deleted for logout","service":"identity-service","timestamp":"2025-03-30T23:31:07.157Z"}
+{"level":"info","message":"Received POST request to /api/auth/refreshToken","service":"identity-service","timestamp":"2025-03-30T23:31:13.279Z"}
+{"level":"info","message":"Request body: {\"refreshToken\":\"02f7c06696e5f03801f237f05759a478d405fa598c7dba74db57bc89a2ce6bea2f460796d1c41cb7\"}","service":"identity-service","timestamp":"2025-03-30T23:31:13.279Z"}
+{"level":"warn","message":"Invalid or expired refresh token","service":"identity-service","timestamp":"2025-03-30T23:31:13.321Z"}
+{"level":"info","message":"Identity service running on port 3001","service":"identity-service","timestamp":"2025-03-30T23:32:30.901Z"}
+{"level":"info","message":"Redis Database is connected","service":"identity-service","timestamp":"2025-03-30T23:32:30.911Z"}
+{"level":"info","message":"Connected to mongodb","service":"identity-service","timestamp":"2025-03-30T23:32:31.442Z"}
+{"level":"error","message":"SyntaxError: Bad escaped character in JSON at position 46 (line 3 column 11)\n    at JSON.parse (<anonymous>)\n    at parse (/Users/monishreddy/Desktop/2025-Start/MicroServices-Architectures/YourCityCinema-Backend/identity-service/node_modules/body-parser/lib/types/json.js:92:19)\n    at /Users/monishreddy/Desktop/2025-Start/MicroServices-Architectures/YourCityCinema-Backend/identity-service/node_modules/body-parser/lib/read.js:128:18\n    at AsyncResource.runInAsyncScope (node:async_hooks:211:14)\n    at invokeCallback (/Users/monishreddy/Desktop/2025-Start/MicroServices-Architectures/YourCityCinema-Backend/identity-service/node_modules/raw-body/index.js:238:16)\n    at done (/Users/monishreddy/Desktop/2025-Start/MicroServices-Architectures/YourCityCinema-Backend/identity-service/node_modules/raw-body/index.js:227:7)\n    at IncomingMessage.onEnd (/Users/monishreddy/Desktop/2025-Start/MicroServices-Architectures/YourCityCinema-Backend/identity-service/node_modules/raw-body/index.js:287:7)\n    at IncomingMessage.emit (node:events:507:28)\n    at IncomingMessage.emit (node:domain:489:12)\n    at endReadableNT (node:internal/streams/readable:1696:12)","service":"identity-service","timestamp":"2025-03-30T23:32:33.688Z"}
