@@ -4,10 +4,10 @@ import { validateMovie } from "../middlewares/validationMiddleware";
 
 const router = Router();
 
-router.post("/movies", validateMovie, MovieController.createMovie);
-router.get("/movies", MovieController.getAllMovies);
-router.get("/movie/:id", MovieController.getMovieById);
-router.put("/movies/:id", MovieController.updateMovie);
-router.delete("/movies/:id", MovieController.deleteMovie);
+router.post("/", validateMovie, MovieController.createMovie);
+router.get("/", MovieController.getAllMovies);
+router.get("/:id", MovieController.getMovieById);
+router.put("/:id", MovieController.updateMovie);
+router.delete("/:id", MovieController.deleteMovie);
 
 export default router;

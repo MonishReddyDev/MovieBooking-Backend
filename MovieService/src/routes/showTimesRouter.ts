@@ -8,29 +8,19 @@ import {
 
 const router = Router();
 
-router.post(
-  "/movies/showtimes",
-  validateShowTime,
-  ShowtimeController.addShowtime
-);
-router.get("/showtimes", ShowtimeController.getAllShowtimes);
-router.get("/showtimes/:id", ShowtimeController.getShowtimeById);
+router.post("/", validateShowTime, ShowtimeController.addShowtime);
 
+router.get("/", ShowtimeController.getAllShowtimes);
+router.get("/:id", ShowtimeController.getShowtimeById);
 router.put(
-  "/showtimes/:id",
+  "/:id",
   validateshowtimeUpdateSchema,
   ShowtimeController.updateShowtime
 );
-router.delete("/showtimes/:id", ShowtimeController.deleteShowtime);
+router.delete("/:id", ShowtimeController.deleteShowtime);
 
-router.get(
-  "/movies/:movieId/showtimes",
-  ShowtimeController.getShowtimesForMovie
-);
-
-router.get(
-  "/showtimes/:showtimeId/seats",
-  ShowtimeController.getAvailableSeats
-);
+// Additional routes
+router.get("/movies/:movieId", ShowtimeController.getShowtimesForMovie);
+router.get("/:showtimeId/seats", ShowtimeController.getAvailableSeats);
 
 export default router;

@@ -27,7 +27,7 @@ app.get("/", (req, res) => {
 //DDos protection and rate limiting
 app.use(rateLimiterMiddleware);
 
-app.use("/api/auth/", authRoutes);
+app.use("/api/auth", authRoutes);
 
 const server = app.listen(port, () => {
   logger.info(`Server running on port ${port}`);

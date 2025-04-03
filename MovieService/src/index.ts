@@ -1,13 +1,10 @@
 console.time("App Startup Time");
 import dotenv from "dotenv";
 dotenv.config();
-import movieRoutes from "./routes/movieRouter";
 import express from "express";
+import routes from "./routes/index";
 import { globalErrorHandler } from "./utils/globalErrorHandler";
-import showTimeRoutes from "./routes/showTimesRouter";
-import theaterRoutes from "./routes/theaterRouter";
 import logger from "./utils/logger";
-import screenRoutes from "./routes/screenRoutes";
 import helmet from "helmet";
 import cors from "cors";
 import rateLimiterMiddleware from "./middlewares/rateLimitMiddleware";
@@ -28,10 +25,7 @@ app.get("/", (req, res) => {
 app.use(rateLimiterMiddleware);
 
 //Routes
-app.use("/api/v1", movieRoutes);
-app.use("/api/v1", showTimeRoutes);
-app.use("/api/v1", theaterRoutes);
-app.use("/api/v1", screenRoutes);
+app.use("/api/", routes); // Mount all routes under `/api/v1`
 
 //Global Errr handling
 app.use(globalErrorHandler);

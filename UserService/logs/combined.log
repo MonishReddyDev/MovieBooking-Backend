@@ -1,0 +1,18 @@
+{"level":"info","message":"Server running on port 3000","service":"User-service","timestamp":"2025-04-02T23:35:23.154Z"}
+{"level":"info","message":"Redis Database is connected","service":"User-service","timestamp":"2025-04-02T23:35:23.198Z"}
+{"level":"info","message":"Server running on port 3001","service":"User-service","timestamp":"2025-04-03T22:42:30.511Z"}
+{"level":"info","message":"Redis Database is connected","service":"User-service","timestamp":"2025-04-03T22:42:30.553Z"}
+{"level":"info","message":"Server running on port 3001","service":"User-service","timestamp":"2025-04-03T22:43:49.172Z"}
+{"level":"info","message":"Redis Database is connected","service":"User-service","timestamp":"2025-04-03T22:43:49.213Z"}
+{"level":"error","message":"Error [CustomError] with status 400: Email already in use","service":"User-service","timestamp":"2025-04-03T22:44:11.276Z"}
+{"level":"error","message":"Error [ValidationError] with status 400: Email already in use","method":"POST","route":"/api/auth/register","service":"User-service","stack":"ValidationError: Email already in use\n    at new ValidationError (/Users/monishreddy/Desktop/2025-Start/MicroServices-Architectures/YourCityCinema-Backend/UserService/src/utils/ExceptionWrappers/customError.ts:47:5)\n    at UserService.register (/Users/monishreddy/Desktop/2025-Start/MicroServices-Architectures/YourCityCinema-Backend/UserService/src/services/userService.ts:28:13)\n    at /Users/monishreddy/Desktop/2025-Start/MicroServices-Architectures/YourCityCinema-Backend/UserService/src/controllers/userController.ts:12:18\n    at /Users/monishreddy/Desktop/2025-Start/MicroServices-Architectures/YourCityCinema-Backend/UserService/src/utils/ExceptionWrappers/controllerWrapper.ts:9:41","timestamp":"2025-04-03T22:44:11.294Z"}
+{"level":"info","message":"Server running on port 3001","service":"User-service","timestamp":"2025-04-03T22:56:13.314Z"}
+{"level":"info","message":"Redis Database is connected","service":"User-service","timestamp":"2025-04-03T22:56:13.357Z"}
+{"level":"info","message":"Server running on port 3001","service":"User-service","timestamp":"2025-04-03T23:29:47.571Z"}
+{"level":"info","message":"Redis Database is connected","service":"User-service","timestamp":"2025-04-03T23:29:47.613Z"}
+{"level":"info","message":"Server running on port 3001","service":"User-service","timestamp":"2025-04-03T23:29:52.274Z"}
+{"level":"info","message":"Redis Database is connected","service":"User-service","timestamp":"2025-04-03T23:29:52.293Z"}
+{"level":"info","message":"Server running on port 3001","service":"User-service","timestamp":"2025-04-03T23:30:02.582Z"}
+{"level":"info","message":"Redis Database is connected","service":"User-service","timestamp":"2025-04-03T23:30:02.601Z"}
+{"level":"info","message":"Server running on port 3001","service":"User-service","timestamp":"2025-04-03T23:33:58.948Z"}
+{"level":"info","message":"Redis Database is connected","service":"User-service","timestamp":"2025-04-03T23:33:58.995Z"}
