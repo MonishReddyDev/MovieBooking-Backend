@@ -8,7 +8,7 @@ import {
 
 const router = Router();
 
-router.post("/", validateShowTime, ShowtimeController.addShowtime);
+router.post("/", validateShowTime, ShowtimeController.addShowtime); //admin
 
 router.get("/", ShowtimeController.getAllShowtimes);
 router.get("/:id", ShowtimeController.getShowtimeById);
@@ -16,8 +16,9 @@ router.put(
   "/:id",
   validateshowtimeUpdateSchema,
   ShowtimeController.updateShowtime
-);
-router.delete("/:id", ShowtimeController.deleteShowtime);
+); //admin
+
+router.delete("/:id", ShowtimeController.deleteShowtime); //admin
 
 // Additional routes
 router.get("/movies/:movieId", ShowtimeController.getShowtimesForMovie);

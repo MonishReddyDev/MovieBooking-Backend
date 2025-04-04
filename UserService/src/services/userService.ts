@@ -7,6 +7,7 @@ import {
   UnauthorizedError,
   ValidationError,
 } from "../utils/ExceptionWrappers/customError";
+import { generateToken } from "../utils/helpers";
 
 const JWT_SECRET = process.env.JWT_SECRET || "your-very-secure-secret-key";
 
@@ -59,13 +60,7 @@ export class UserService {
       );
     }
 
-    const token = jwt.sign(
-      { id: user.id, email: user.email, role: user.role },
-      JWT_SECRET,
-      {
-        expiresIn: "1h",
-      }
-    );
+    const token = await generateToken(user);
 
     const updatedUser = await this.userRepository.update(user.id, { token }); // Store token in DB
 

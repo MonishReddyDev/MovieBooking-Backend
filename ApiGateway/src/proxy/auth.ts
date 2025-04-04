@@ -29,7 +29,7 @@ export const authProxy = proxy(USER_SERVICE, {
     userRes: Response
   ): Buffer => {
     logger.info(`Response from User-service: ${proxyRes.statusCode}`);
-    if (proxyRes.statusCode ?? 500 >= 400) {
+    if ((proxyRes.statusCode ?? 500) >= 400) {
       const errorMessage =
         proxyResData.toString("utf8") || "Downstream service error";
       throw new Error(

@@ -7,8 +7,8 @@ const router = Router();
 // Define routes for Theater CRUD operations
 router.get("/", TheaterController.getAllTheaters);
 router.get("/:id", TheaterController.getTheaterById);
-router.post("/", validateTheater, TheaterController.createTheater);
-router.put("/:id", TheaterController.updateTheater);
-router.delete("/:id", TheaterController.deleteTheater);
+router.post("/", validateTheater, TheaterController.createTheater); //admin
+router.put("/:id", TheaterController.updateTheater); //admin
+router.delete("/:id", TheaterController.deleteTheater); //admin
 
 export default router;

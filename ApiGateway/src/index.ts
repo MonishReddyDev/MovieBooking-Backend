@@ -13,6 +13,7 @@ import { IncomingMessage, OutgoingHttpHeaders, RequestOptions } from "http";
 import errorHandler from "./middlewares/globalErrorHandler";
 import { authProxy } from "./proxy/auth";
 import { moviesProxy } from "./proxy/movies";
+import { verifyJWTMiddleware } from "./middlewares/verifyJWTMiddleware";
 
 const app = express();
 
@@ -30,8 +31,7 @@ app.use(morgan("dev"));
 
 //proxyRoutes
 app.use("/v1/auth", authProxy);
-app.use("/v1/movies", moviesProxy);
-
+app.use("/v1/movies", verifyJWTMiddleware, moviesProxy);
 
 //error handler
 app.use(errorHandler);

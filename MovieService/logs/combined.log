@@ -265,3 +265,14 @@
 {"level":"info","message":"Fetched 2 movies from the database","service":"Movie-service","timestamp":"2025-04-03T23:30:25.519Z"}
 {"level":"info","message":"Fetched 2 movies from the database","service":"Movie-service","timestamp":"2025-04-03T23:30:25.911Z"}
 {"level":"info","message":"Fetched 2 movies from the database","service":"Movie-service","timestamp":"2025-04-03T23:30:26.292Z"}
+{"level":"info","message":"Movie service running on port 3000","service":"Movie-service","timestamp":"2025-04-04T20:43:39.331Z"}
+{"level":"info","message":"Redis Database is connected","service":"Movie-service","timestamp":"2025-04-04T20:43:39.379Z"}
+{"level":"info","message":"Fetched 2 movies from the database","service":"Movie-service","timestamp":"2025-04-04T20:47:33.478Z"}
+{"level":"info","message":"Fetched 2 movies from the database","service":"Movie-service","timestamp":"2025-04-04T20:47:46.170Z"}
+{"level":"info","message":"Fetched 2 movies from the database","service":"Movie-service","timestamp":"2025-04-04T20:47:46.895Z"}
+{"level":"info","message":"Fetched 2 movies from the database","service":"Movie-service","timestamp":"2025-04-04T20:47:47.387Z"}
+{"level":"info","message":"Fetched 2 movies from the database","service":"Movie-service","timestamp":"2025-04-04T20:48:16.193Z"}
+{"level":"info","message":"Fetched 2 movies from the database","service":"Movie-service","timestamp":"2025-04-04T20:48:29.259Z"}
+{"level":"info","message":"Fetched 2 movies from the database","service":"Movie-service","timestamp":"2025-04-04T20:49:33.172Z"}
+{"level":"info","message":"Movie \"RRR2\" added to the Database","service":"Movie-service","timestamp":"2025-04-04T20:57:29.847Z"}
+{"level":"info","message":"Fetched 3 movies from the database","service":"Movie-service","timestamp":"2025-04-04T20:58:29.867Z"}

@@ -16,3 +16,65 @@
 {"level":"info","message":"Redis Database is connected","service":"User-service","timestamp":"2025-04-03T23:30:02.601Z"}
 {"level":"info","message":"Server running on port 3001","service":"User-service","timestamp":"2025-04-03T23:33:58.948Z"}
 {"level":"info","message":"Redis Database is connected","service":"User-service","timestamp":"2025-04-03T23:33:58.995Z"}
+{"level":"info","message":"Server running on port 3001","service":"User-service","timestamp":"2025-04-04T20:17:28.504Z"}
+{"level":"info","message":"Redis Database is connected","service":"User-service","timestamp":"2025-04-04T20:17:28.546Z"}
+{"level":"error","message":"Error [CustomError] with status 400: Email already in use","service":"User-service","timestamp":"2025-04-04T20:17:40.243Z"}
+{"level":"error","message":"Error [ValidationError] with status 400: Email already in use","method":"POST","route":"/api/auth/register","service":"User-service","stack":"ValidationError: Email already in use\n    at new ValidationError (/Users/monishreddy/Desktop/2025-Start/MicroServices-Architectures/YourCityCinema-Backend/UserService/src/utils/ExceptionWrappers/customError.ts:47:5)\n    at UserService.register (/Users/monishreddy/Desktop/2025-Start/MicroServices-Architectures/YourCityCinema-Backend/UserService/src/services/userService.ts:28:13)\n    at /Users/monishreddy/Desktop/2025-Start/MicroServices-Architectures/YourCityCinema-Backend/UserService/src/controllers/userController.ts:12:18\n    at /Users/monishreddy/Desktop/2025-Start/MicroServices-Architectures/YourCityCinema-Backend/UserService/src/utils/ExceptionWrappers/controllerWrapper.ts:9:41","timestamp":"2025-04-04T20:17:40.262Z"}
+{"level":"info","message":"Server running on port 3001","service":"User-service","timestamp":"2025-04-04T20:43:53.850Z"}
+{"level":"info","message":"Redis Database is connected","service":"User-service","timestamp":"2025-04-04T20:43:53.894Z"}
+{"level":"info","message":"Server running on port 3001","service":"User-service","timestamp":"2025-04-04T20:50:21.613Z"}
+{"level":"info","message":"Redis Database is connected","service":"User-service","timestamp":"2025-04-04T20:50:21.652Z"}
+{"level":"info","message":"Server running on port 3001","service":"User-service","timestamp":"2025-04-04T20:51:14.062Z"}
+{"level":"info","message":"Redis Database is connected","service":"User-service","timestamp":"2025-04-04T20:51:14.082Z"}
+{"level":"info","message":"Server running on port 3001","service":"User-service","timestamp":"2025-04-04T20:51:22.892Z"}
+{"level":"info","message":"Redis Database is connected","service":"User-service","timestamp":"2025-04-04T20:51:22.912Z"}
+{"level":"info","message":"Server running on port 3001","service":"User-service","timestamp":"2025-04-04T20:51:27.364Z"}
+{"level":"info","message":"Redis Database is connected","service":"User-service","timestamp":"2025-04-04T20:51:27.384Z"}
+{"level":"info","message":"Server running on port 3001","service":"User-service","timestamp":"2025-04-04T20:51:36.688Z"}
+{"level":"info","message":"Redis Database is connected","service":"User-service","timestamp":"2025-04-04T20:51:36.708Z"}
+{"level":"info","message":"Server running on port 3001","service":"User-service","timestamp":"2025-04-04T20:51:45.779Z"}
+{"level":"info","message":"Redis Database is connected","service":"User-service","timestamp":"2025-04-04T20:51:45.799Z"}
+{"level":"info","message":"Server running on port 3001","service":"User-service","timestamp":"2025-04-04T20:51:51.314Z"}
+{"level":"info","message":"Redis Database is connected","service":"User-service","timestamp":"2025-04-04T20:51:51.333Z"}
+{"level":"info","message":"Server running on port 3001","service":"User-service","timestamp":"2025-04-04T20:51:56.183Z"}
+{"level":"info","message":"Redis Database is connected","service":"User-service","timestamp":"2025-04-04T20:51:56.204Z"}
+{"level":"info","message":"Server running on port 3001","service":"User-service","timestamp":"2025-04-04T20:52:02.277Z"}
+{"level":"info","message":"Redis Database is connected","service":"User-service","timestamp":"2025-04-04T20:52:02.297Z"}
+{"level":"info","message":"Server running on port 3001","service":"User-service","timestamp":"2025-04-04T20:52:06.645Z"}
+{"level":"info","message":"Redis Database is connected","service":"User-service","timestamp":"2025-04-04T20:52:06.664Z"}
+{"level":"info","message":"Server running on port 3001","service":"User-service","timestamp":"2025-04-04T20:52:14.435Z"}
+{"level":"info","message":"Redis Database is connected","service":"User-service","timestamp":"2025-04-04T20:52:14.455Z"}
+{"level":"info","message":"Server running on port 3001","service":"User-service","timestamp":"2025-04-04T20:52:17.241Z"}
+{"level":"info","message":"Redis Database is connected","service":"User-service","timestamp":"2025-04-04T20:52:17.261Z"}
+{"level":"info","message":"Server running on port 3001","service":"User-service","timestamp":"2025-04-04T20:52:23.298Z"}
+{"level":"info","message":"Redis Database is connected","service":"User-service","timestamp":"2025-04-04T20:52:23.318Z"}
+{"level":"info","message":"Server running on port 3001","service":"User-service","timestamp":"2025-04-04T20:52:29.078Z"}
+{"level":"info","message":"Redis Database is connected","service":"User-service","timestamp":"2025-04-04T20:52:29.098Z"}
+{"level":"info","message":"Server running on port 3001","service":"User-service","timestamp":"2025-04-04T20:52:33.434Z"}
+{"level":"info","message":"Redis Database is connected","service":"User-service","timestamp":"2025-04-04T20:52:33.453Z"}
+{"level":"info","message":"Server running on port 3001","service":"User-service","timestamp":"2025-04-04T20:52:47.851Z"}
+{"level":"info","message":"Redis Database is connected","service":"User-service","timestamp":"2025-04-04T20:52:47.870Z"}
+{"level":"info","message":"Server running on port 3001","service":"User-service","timestamp":"2025-04-04T20:52:52.392Z"}
+{"level":"info","message":"Redis Database is connected","service":"User-service","timestamp":"2025-04-04T20:52:52.412Z"}
+{"level":"info","message":"Server running on port 3001","service":"User-service","timestamp":"2025-04-04T20:52:59.511Z"}
+{"level":"info","message":"Redis Database is connected","service":"User-service","timestamp":"2025-04-04T20:52:59.532Z"}
+{"level":"info","message":"Server running on port 3001","service":"User-service","timestamp":"2025-04-04T20:53:10.085Z"}
+{"level":"info","message":"Redis Database is connected","service":"User-service","timestamp":"2025-04-04T20:53:10.105Z"}
+{"level":"info","message":"Server running on port 3001","service":"User-service","timestamp":"2025-04-04T20:54:42.012Z"}
+{"level":"info","message":"Redis Database is connected","service":"User-service","timestamp":"2025-04-04T20:54:42.054Z"}
+{"level":"info","message":"Server running on port 3001","service":"User-service","timestamp":"2025-04-04T20:54:50.139Z"}
+{"level":"info","message":"Redis Database is connected","service":"User-service","timestamp":"2025-04-04T20:54:50.158Z"}
+{"level":"info","message":"Server running on port 3001","service":"User-service","timestamp":"2025-04-04T20:55:01.318Z"}
+{"level":"info","message":"Redis Database is connected","service":"User-service","timestamp":"2025-04-04T20:55:01.338Z"}
+{"level":"info","message":"Server running on port 3001","service":"User-service","timestamp":"2025-04-04T20:55:21.795Z"}
+{"level":"info","message":"Redis Database is connected","service":"User-service","timestamp":"2025-04-04T20:55:21.815Z"}
+{"level":"info","message":"Server running on port 3001","service":"User-service","timestamp":"2025-04-04T20:55:28.637Z"}
+{"level":"info","message":"Redis Database is connected","service":"User-service","timestamp":"2025-04-04T20:55:28.657Z"}
+{"level":"info","message":"Server running on port 3001","service":"User-service","timestamp":"2025-04-04T20:56:01.478Z"}
+{"level":"info","message":"Redis Database is connected","service":"User-service","timestamp":"2025-04-04T20:56:01.521Z"}
+{"level":"info","message":"Server running on port 3001","service":"User-service","timestamp":"2025-04-04T20:56:15.910Z"}
+{"level":"info","message":"Redis Database is connected","service":"User-service","timestamp":"2025-04-04T20:56:15.933Z"}
+{"level":"error","message":"Error [CustomError] with status 400: Email already in use","service":"User-service","timestamp":"2025-04-04T20:57:47.162Z"}
+{"level":"error","message":"Error [ValidationError] with status 400: Email already in use","method":"POST","route":"/api/auth/register","service":"User-service","stack":"ValidationError: Email already in use\n    at new ValidationError (/Users/monishreddy/Desktop/2025-Start/MicroServices-Architectures/YourCityCinema-Backend/UserService/src/utils/ExceptionWrappers/customError.ts:47:5)\n    at UserService.register (/Users/monishreddy/Desktop/2025-Start/MicroServices-Architectures/YourCityCinema-Backend/UserService/src/services/userService.ts:29:13)\n    at /Users/monishreddy/Desktop/2025-Start/MicroServices-Architectures/YourCityCinema-Backend/UserService/src/controllers/userController.ts:12:18\n    at /Users/monishreddy/Desktop/2025-Start/MicroServices-Architectures/YourCityCinema-Backend/UserService/src/utils/ExceptionWrappers/controllerWrapper.ts:9:41","timestamp":"2025-04-04T20:57:47.180Z"}
+{"level":"error","message":"Error [CustomError] with status 404: User not found","service":"User-service","timestamp":"2025-04-04T20:58:21.450Z"}
+{"level":"error","message":"Error [NotFoundError] with status 404: User not found","method":"DELETE","route":"/api/auth/users/56131525-ec65-4626-ab9e-95c5c0ca7e4c","service":"User-service","stack":"NotFoundError: User not found\n    at new NotFoundError (/Users/monishreddy/Desktop/2025-Start/MicroServices-Architectures/YourCityCinema-Backend/UserService/src/utils/ExceptionWrappers/customError.ts:40:5)\n    at UserService.getUserById (/Users/monishreddy/Desktop/2025-Start/MicroServices-Architectures/YourCityCinema-Backend/UserService/src/services/userService.ts:81:13)\n    at UserService.deleteUser (/Users/monishreddy/Desktop/2025-Start/MicroServices-Architectures/YourCityCinema-Backend/UserService/src/services/userService.ts:108:5)\n    at /Users/monishreddy/Desktop/2025-Start/MicroServices-Architectures/YourCityCinema-Backend/UserService/src/controllers/userController.ts:48:25\n    at /Users/monishreddy/Desktop/2025-Start/MicroServices-Architectures/YourCityCinema-Backend/UserService/src/utils/ExceptionWrappers/controllerWrapper.ts:9:41","timestamp":"2025-04-04T20:58:21.454Z"}
